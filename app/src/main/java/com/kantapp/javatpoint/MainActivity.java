@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
         tutorialList=new ArrayList();
         tutorialList.add("XMLParsingAndroidHive");
         tutorialList.add("XMLPullParsing");
+        tutorialList.add("AadharQR");
         RecyclerView recyclerView=(RecyclerView)findViewById(R.id.recyclerview);
 
         recyclerView.setHasFixedSize(true);
@@ -123,6 +124,12 @@ public class MainActivity extends AppCompatActivity {
                     {
                         startActivity(XMLPullParsing.class);
                     }
+                    else if(tutorialList.get(position)=="AadharQR")
+                    {
+                        startActivity(AadharQR.class);
+                    }
+
+
                 }
                 return false;
             }
