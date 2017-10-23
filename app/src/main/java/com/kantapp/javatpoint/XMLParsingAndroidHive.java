@@ -2,10 +2,9 @@ package com.kantapp.javatpoint;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.Toolbar;
+
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -43,7 +42,7 @@ public class XMLParsingAndroidHive extends AppCompatActivity {
             for(int i=0;i<nodeList.getLength();i++)
             {
                 Node node =nodeList.item(i);
-                if(node.getNodeType()==node.ELEMENT_NODE)
+                if(node.getNodeType()== Node.ELEMENT_NODE)
                 {
                     Element element2=(Element)node;
                     tv1.setText(tv1.getText()+"\nName : " + getValue("name", element2)+"\n");
